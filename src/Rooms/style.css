@@ -1,0 +1,9 @@
+.rooms__container__button button{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 1%;
+}
+.vermas{
+    padding: 10px 70px;
+}

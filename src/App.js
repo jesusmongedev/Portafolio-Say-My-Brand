@@ -2,6 +2,7 @@ import "./App.css";
 import { Header } from "./Header";
 import { HeroImg } from "./HeroImg";
 import { Booking } from "./Booking";
+import { Rooms } from "./Rooms";
 import { Opinions } from "./Opinions";
 import { Footer } from "./Footer";
 
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <HeroImg/>
       <Booking/>
+      <Rooms/>
       <Opinions/>
       <Footer/>
     </>
