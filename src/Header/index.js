@@ -6,13 +6,13 @@ const Header = () => {
             <h1>EUROBUILDING</h1>
             <ul>
                 <li>
-                    <a>Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a>About us</a>
+                    <a href="#">About us</a>
                 </li>
                 <li>
-                    <a>Blog</a>
+                    <a href="#">Blog</a>
                 </li>
             </ul>
         </nav>

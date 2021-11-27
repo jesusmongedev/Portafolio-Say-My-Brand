@@ -1,0 +1,17 @@
+.Opinions {
+    background-color: rgb(238, 233, 226);
+    .Checked {
+        color: orange;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+
+// .Checked {
+//     color: orange;
+//   }
+// .Opinions {
+//     background-color: rgb(238, 233, 226);
+// }
