@@ -1,10 +1,10 @@
 const Booking = () => {
   return (
     <form>
-      <label for="check-in"></label>
+      <label htmlFor="check-in"></label>
       <input type="date"></input>
       <button>
-          <a>Reservar</a>
+          <a href="#" >Reservar</a>
       </button>
     </form>
   );

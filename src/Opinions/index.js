@@ -1,7 +1,8 @@
 import fakeUser from './fake-user.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCoffee, faStar, faStarChecked} from '@fortawesome/free-solid-svg-icons'
-import "./style.css";
+import "./style.scss";
+// import "./style.css";
 
 const Opinions = () => {
     return(
@@ -16,10 +17,10 @@ const Opinions = () => {
                     Camilú Arancibia
                 </h4>
                 <div className="Rated">
-                    <FontAwesomeIcon icon={faStar} className="checked"/>
-                    <FontAwesomeIcon icon={faStar} className="checked"/>
-                    <FontAwesomeIcon icon={faStar} className="checked"/>
-                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} className="Checked" /> 
+                    <FontAwesomeIcon icon={faStar} className="Checked" />
+                    <FontAwesomeIcon icon={faStar} className="Checked" />
+                    <FontAwesomeIcon icon={faStar} className="Checked" />
                     <FontAwesomeIcon icon={faStar} />
                 </div>
             </div>
