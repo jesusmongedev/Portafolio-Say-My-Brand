@@ -21,9 +21,7 @@ const Opinions = () => {
                     <FontAwesomeIcon icon={faStar} className="checked"/>
                     <FontAwesomeIcon icon={faStar} />
                     <FontAwesomeIcon icon={faStar} />
-
                 </div>
-                
             </div>
         </div>
     )
