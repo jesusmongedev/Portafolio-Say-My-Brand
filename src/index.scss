@@ -1,18 +1,16 @@
 // Aquí Vamos a poner los estilos principales - Colores - Fuentes -Font-Weigh - Y demás estilos generales
-// Ejemplo
 /*===== VARIABLES CSS =====*/ 
+
+/*===== VARIABLES CSS =====*/
+
 /*===== COLORS =====*/
-
-//   $first-color: #0571F8;
-//   $second-color: #0E2431; 
-
+$navy-blue: #4133FF;
+$light-gray: #C4C4C4;
 /*===== FONTS AND TYPOGRAOHY =====*/
-//   $body-font: 'Poppins', sans-serif;
-//   $big-font-size: 3.2rem;
-//   $h2-font-size: 2rem;
-//   $normal-font-size: 1.5rem; 
+$body-font: 'Poppins', sans-serif;
 
 // Ejemplo para verificar que el Index.scss renderize los estilos
 body {
-    background-color: #C4C4C4;
+    font-family: $body-font;
+    background-color: $light-gray;
 }
