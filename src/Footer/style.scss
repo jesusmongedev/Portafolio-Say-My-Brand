@@ -1,0 +1,39 @@
+footer {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+        transition: .4s all ease;
+        &:hover {
+            color: #332DC1;
+            ;
+        }
+    }
+    .footer__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .footer__contact-title {
+            margin: 0;
+        }
+        .footer__contact-icon {
+            font-size: 2.5rem;
+            padding-right: 12px;
+        }
+    }
+    .footer__social-title {
+        text-align: left;
+        margin: 0 0 12px 0;
+    }
+    .footer__social-icon-container {
+        display: flex;
+        gap: 24px;
+        .footer__social-icon {
+            font-size: 2.5rem;
+        }
+    }
+}

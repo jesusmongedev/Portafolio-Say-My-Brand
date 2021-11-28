@@ -2,7 +2,7 @@ import React from 'react'
 import {SliderData} from './SliderData';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons'
-import './styles.scss';
+import './style.scss';
 
 const ImageSlider = () => {
     // Estado para Renderizar la imagen a la actual (current)
