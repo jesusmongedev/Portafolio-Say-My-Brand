@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCoffee, faStar, faStarChecked} from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react';
 import "./style.scss";
-// import "./style.css";
 
 const review = [
     {
@@ -64,7 +63,7 @@ const Opinions = () => {
                     <button onClick={() => setCount(0)}></button>
                     <button onClick={() => setCount(1)}></button>
                     <button onClick={() => setCount(2)}></button>
-                </div>
+            </div>
         </div>
     )
 }

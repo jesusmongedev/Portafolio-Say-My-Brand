@@ -1,0 +1,46 @@
+$primary-color: #332DC1;
+
+.header {
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    background: $primary-color;
+    color: white;
+    z-index: 1;
+    .header__img {
+        width: 50px;
+        height: auto;
+    }
+    .header__title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .toggle {
+        position: relative;
+        cursor: pointer;
+        summary {
+            list-style: none;
+        }
+        .toggle__list{
+            position: absolute;
+            background: $primary-color;
+            li {
+                list-style: none;
+                padding-bottom: 5px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
