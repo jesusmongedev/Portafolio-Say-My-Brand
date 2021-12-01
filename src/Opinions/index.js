@@ -1,33 +1,11 @@
 import fakeUser from './fake-user.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCoffee, faStar, faStarChecked} from '@fortawesome/free-solid-svg-icons'
+import {faCoffee, faStar, faStarChecked} from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
+import {review} from './Reviews.js';
 import "./style.scss";
 // import "./style.css";
 
-const review = [
-    {
-      name: "Camila Arancibia",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit eget litora vehicula sociosqu, praesent in magnis eu pharetra mauris congue varius consequat nulla, arcu neque porttitor inceptos faucibus mollis pellentesque nec per interdum.",
-      image: "https://i.imgur.com/uz4qrhX.png?1",
-      star: 3,
-    },
-    {
-        name: "Antonio Silva",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipiscing elit eget litora vehicula sociosqu, praesent in magnis eu pharetra mauris congue varius consequat nulla, arcu neque porttitor inceptos faucibus mollis pellentesque nec per interdum.",
-        image: "https://i.imgur.com/uz4qrhX.png?1",
-        star: 4,
-      },
-    {
-      name: "Jesús Monge",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit eget litora vehicula sociosqu, praesent in magnis eu pharetra mauris congue varius consequat nulla, arcu neque porttitor inceptos faucibus mollis pellentesque nec per interdum.",
-      image: "https://i.imgur.com/uz4qrhX.png?1",
-      star: 5,
-    },
-  ];
 
 var count=0;
 
@@ -43,8 +21,15 @@ function star(star){
     }
     return stars;
 }
-const Opinions = () => {
+
+
+const Opinions = (props) => {
     const [count, setCount] = useState(0);
+
+    const createOpinion = () => {
+      props.setOpenOpinions(prevState => !prevState);
+    }
+
     return(
         <div className="Opinions">
             <h3 className="Opinions_Title">opiniones</h3>
@@ -64,7 +49,14 @@ const Opinions = () => {
                     <button onClick={() => setCount(0)}></button>
                     <button onClick={() => setCount(1)}></button>
                     <button onClick={() => setCount(2)}></button>
-                </div>
+                    <button onClick={() => setCount(3)}></button>
+            </div>
+            <button 
+            className="Opinions_Button--create"
+            onClick={createOpinion}
+            >
+                <FontAwesomeIcon icon={faCoffee} />
+            </button>
         </div>
     )
 }

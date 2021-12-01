@@ -1,0 +1,24 @@
+.new-opinion {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #7075ff 73%, #a850c8 100%);
+    border-radius: 25px;
+    position: fixed;
+    width: 40%;
+    height: 60%;
+    top: 20%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text, .button{
+        border: 1px solid #A9A9A9;
+        border-radius: 5px;
+        width: 300px;
+        padding: 10px;
+    }
+    .text{
+        margin: 20px 0;
+        height: 100px;
+    }
+}
