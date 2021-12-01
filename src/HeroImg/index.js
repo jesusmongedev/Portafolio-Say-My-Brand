@@ -1,4 +1,4 @@
-
+//HERO
 const HeroImg = () => {
     return (
         <figure>
@@ -7,5 +7,4 @@ const HeroImg = () => {
         </figure>
     )
 }
-
 export { HeroImg };
