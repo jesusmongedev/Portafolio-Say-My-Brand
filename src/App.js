@@ -5,8 +5,12 @@ import { Rooms } from "./Rooms";
 import { Opinions } from "./Opinions";
 import { Footer } from "./Footer";
 import { ImageSlider } from "./ImageSlider";
+import { NewOpinion } from "./NewOpinion";
+import { useState } from "react";
 
 function App() {
+  const [openOpinions, setOpenOpinions] = useState(false);
+
   return (
     <>
       <Header/>
@@ -14,8 +18,15 @@ function App() {
       <Booking/>
       <ImageSlider />
       <Rooms/>
-      <Opinions/>
+      <Opinions 
+        setOpenOpinions={setOpenOpinions}
+        />
       <Footer/>
+      {openOpinions && (
+        <NewOpinion setOpenOpinions={setOpenOpinions}>
+          <p>Prueba</p>
+        </NewOpinion>
+      )}
     </>
   );
 }
