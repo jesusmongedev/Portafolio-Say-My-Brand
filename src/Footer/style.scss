@@ -1,15 +1,19 @@
+$primary-color: #332DC1;
+$light-gray: #C4C4C4;
+
 footer {
     padding: 3rem 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: $primary-color;
     color: white;
     a {
         text-decoration: none;
         color: white;
         transition: .4s all ease;
         &:hover {
-            color: #332DC1;
+            color: $light-gray;
             ;
         }
     }

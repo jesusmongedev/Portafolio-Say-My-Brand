@@ -1,7 +1,8 @@
+$light-gray: #C4C4C4;
+
 .slider {
     position: relative;
     height: 100vh;
-    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +11,7 @@
         top: 50%;
         left: 32px;
         font-size: 3em;
-        color: #fff;
+        color: $light-gray;
         z-index: 10;
         cursor: pointer;
         user-select: none;

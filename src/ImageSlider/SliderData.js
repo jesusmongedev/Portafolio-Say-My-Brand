@@ -1,6 +1,6 @@
 export const SliderData = [
     {
-        image: "https://i.postimg.cc/Gt4CBcgg/nad-hemnani-LTwm-Gm1-WXa-M-unsplash.jpg",
+        image: "https://i.postimg.cc/XNPWRCXR/swimming-pool-ge78c68d9f-1280.jpg",
         alt: "Hotel-Image-1"
     },
     {
@@ -16,7 +16,7 @@ export const SliderData = [
         alt: "Hotel-Image-4"
     },
     {
-        image: "https://i.postimg.cc/XNPWRCXR/swimming-pool-ge78c68d9f-1280.jpg",
+        image: "https://i.postimg.cc/Gt4CBcgg/nad-hemnani-LTwm-Gm1-WXa-M-unsplash.jpg",
         alt: "Hotel-Image-5"
     }
 ]

@@ -1,11 +1,16 @@
+import './Booking.scss';
+
 const Booking = () => {
   return (
-    <form>
-      <label htmlFor="check-in"></label>
-      <input type="date"></input>
-      <button>
-          <a href="#" >Reservar</a>
-      </button>
+    <form className="booking">
+      <p className="booking__title">Haga su Reservación</p>
+      <div className="booking__inputs">
+        <input type="date" id="check-in"/>
+        <input type="date" id="check-out"/>
+        <button type="submit">
+            <a href="#" >Reservar</a>
+        </button>
+      </div>
     </form>
   );
 };
