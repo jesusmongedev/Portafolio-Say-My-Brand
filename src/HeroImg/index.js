@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { SliderData } from "../ImageSlider/SliderData";
 import "./HeroImg.scss";
 const HeroImg = () => {
@@ -17,15 +16,3 @@ const HeroImg = () => {
 };
 
 export { HeroImg };
-=======
-//HERO
-const HeroImg = () => {
-    return (
-        <figure>
-            <figcaption>Aquí deben ir imagenes llamativas del Hotel
-            </figcaption>
-        </figure>
-    )
-}
-export { HeroImg };
->>>>>>> ccc64ca803556e04b6fa5d853d7c69ba2fa20971

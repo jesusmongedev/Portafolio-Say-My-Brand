@@ -11,23 +11,23 @@ $primary-color: #332DC1;
     background: $primary-color;
     color: white;
     z-index: 1;
-    .header__img {
+    .header__logo {
         width: 50px;
         height: auto;
     }
-    .header__title {
+    .header__name {
         margin: 0;
         font-weight: 400;
         font-size: 24px;
         letter-spacing: 2px;
     }
-    .toggle {
+    .nav {
         position: relative;
         cursor: pointer;
         summary {
             list-style: none;
         }
-        .toggle__list{
+        .nav__links{
             position: absolute;
             background: $primary-color;
             li {

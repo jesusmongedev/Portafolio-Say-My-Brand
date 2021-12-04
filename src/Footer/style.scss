@@ -21,23 +21,27 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 12px;
+        a {
+            display: flex;
+            align-items: center;
+        }
         .footer__contact-title {
-            margin: 0;
+            text-align: left;
+            margin: 0 0 0 11px;
         }
         .footer__contact-icon {
-            font-size: 2.5rem;
-            padding-right: 12px;
+            width: 50px;
+            font-size: 2rem;
         }
     }
     .footer__social-title {
-        text-align: left;
+        text-align: center;
         margin: 0 0 12px 0;
     }
     .footer__social-icon-container {
-        display: flex;
-        gap: 24px;
         .footer__social-icon {
-            font-size: 2.5rem;
+            width: 50px;
+            font-size: 2rem;
         }
     }
 }
