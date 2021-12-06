@@ -1,6 +1,6 @@
 import fakeUser from './fake-user.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCoffee, faStar, faStarChecked} from '@fortawesome/free-solid-svg-icons';
+import {faPlus, faStar, faStarChecked} from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
 import {review} from './Reviews.js';
 import "./style.scss";
@@ -55,7 +55,7 @@ const Opinions = (props) => {
             className="Opinions_Button--create"
             onClick={createOpinion}
             >
-                <FontAwesomeIcon icon={faCoffee} />
+                <FontAwesomeIcon icon={faPlus} />
             </button>
         </div>
     )
