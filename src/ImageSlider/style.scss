@@ -1,6 +1,7 @@
 $light-gray: #C4C4C4;
 
 .slider {
+    overflow: hidden;
     position: relative;
     height: 100vh;
     display: flex;
@@ -29,7 +30,7 @@ $light-gray: #C4C4C4;
         transform: scale(1.08);
     }
     .image {
-        width: 1000px;
+        width: 100vw;
         height: 600px;
         object-fit: cover;
         border-radius: 10px;
