@@ -1,0 +1,28 @@
+.rooms {
+    padding: 0 84px;
+    .rooms__container {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .rooms__container-button {
+        text-align: center;
+    }
+    .rooms__container-button button{
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: 1%;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+    .vermas{
+        padding: 10px 70px;
+        cursor: pointer;
+    }
+}
