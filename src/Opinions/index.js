@@ -32,17 +32,19 @@ const Opinions = (props) => {
 
     return(
         <div className="Opinions">
-            <h3 className="Opinions_Title">opiniones</h3>
+            <h3 className="Opinions_Title">Opiniones</h3>
             <p className="Opinions_Quote">
             {review[count].description}
             </p>
             <div className="Opinions_User">
                 <img src={fakeUser}  alt="User profile picture" />
-                <h4 className="Opinions_User-Name">
-                    {review[count].name}
-                </h4>
-                <div className="Rated">
-                    {star(review[count].star)}
+                <div className="Opinions_data">
+                    <h4 className="Opinions_User-Name">
+                        {review[count].name}
+                    </h4>
+                    <div className="Rated">
+                        {star(review[count].star)}
+                    </div>
                 </div>
             </div>
             <div className="Opinions__button">
@@ -51,12 +53,13 @@ const Opinions = (props) => {
                     <button onClick={() => setCount(2)}></button>
                     <button onClick={() => setCount(3)}></button>
             </div>
-            <button 
-            className="Opinions_Button--create"
-            onClick={createOpinion}
-            >
-                <FontAwesomeIcon icon={faUserPlus} />
-            </button>
+            <div className="create__opinions-button">
+                <button 
+                    onClick={createOpinion}
+                >
+                    <FontAwesomeIcon icon={faUserPlus} />
+                </button>
+            </div>
         </div>
     )
 }

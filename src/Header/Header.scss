@@ -29,6 +29,9 @@ $primary-color: #332DC1;
         }
         .nav__links{
             position: absolute;
+            width: 250px;
+            padding: 16px 24px;
+            left: -90px;
             background: $primary-color;
             li {
                 list-style: none;

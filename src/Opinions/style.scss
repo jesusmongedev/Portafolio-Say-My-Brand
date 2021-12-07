@@ -1,20 +1,41 @@
 .Opinions {
+    padding: 16px 8px;
     background-color: rgb(238, 233, 226);
-    .Checked {
-        color: orange;
-        &:hover {
-            color: red;
+    .Opinions_User {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .Opinions_data {
+            .Opinions_User-Name {
+                margin: 0 0 5px 0;
+            }
+        }
+        .Checked {
+            color: orange;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    .Opinions__button {
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        button {
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
         }
     }
 }
-.Opinions_Button--create {
-    z-index: 1;
+
+
+
+.create__opinions-button {
+    text-align: center;
 }
-
-
-// .Checked {
-//     color: orange;
-//   }
-// .Opinions {
-//     background-color: rgb(238, 233, 226);
-// }
+    .create__opinions-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
