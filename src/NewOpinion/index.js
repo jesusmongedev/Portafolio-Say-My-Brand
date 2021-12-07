@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import {FaStar} from "react-icons/fa";
 import {review} from '../Opinions/Reviews.js';
