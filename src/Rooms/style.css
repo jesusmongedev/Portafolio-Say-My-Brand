@@ -7,3 +7,6 @@
 .vermas{
     padding: 10px 70px;
 }
+.rooms__container img {
+    width: 100vw;
+}
