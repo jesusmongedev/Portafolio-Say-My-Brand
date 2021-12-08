@@ -7,6 +7,7 @@ import { Footer } from "./Footer";
 import { ImageSlider } from "./ImageSlider";
 import { NewOpinion } from "./NewOpinion";
 import { useState } from "react";
+import { AboutHotel } from "./AboutHotel";
 
 function App() {
   const [openOpinions, setOpenOpinions] = useState(false);
@@ -16,6 +17,7 @@ function App() {
       <Header/>
       <HeroImg/>
       <Booking/>
+      <AboutHotel/>
       <ImageSlider />
       <Rooms/>
       <Opinions 

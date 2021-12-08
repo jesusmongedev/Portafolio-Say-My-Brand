@@ -1,18 +1,21 @@
 .booking {
     height: fit-content;
     padding: 1rem .5rem ;
-}
-.booking__inputs {
-    grid-gap: 10px;
-    display: grid;
-    justify-content: space-evenly;
-    justify-items: stretch;
-    input {
-        overflow: auto;
-        padding: 6px;        
+    .booking__title {
+        font-weight: 700;
     }
-    button{
-        grid-column: 1/3;
+    .booking__inputs {
+        grid-gap: 10px;
+        display: grid;
+        justify-content: space-evenly;
+        justify-items: stretch;
+        input {
+            overflow: auto;
+            padding: 6px;        
+        }
+        button{
+            grid-column: 1/3;
+        }
     }
 }
 $breakpoint-tablet: 768px;

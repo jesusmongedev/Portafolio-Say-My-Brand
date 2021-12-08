@@ -39,7 +39,7 @@ const Rooms = () => {
                 </div>
                 <h3>{items[count].name}</h3>
                 <p>{items[count].description}</p>
-                <button className="vermas">Ver más</button>
+                <button className="button button--active"> <a>Ver más</a> </button>
             </div>
         </section>
     )
