@@ -1,5 +1,5 @@
-import { SliderData } from "../ImageSlider/SliderData";
 import "./HeroImg.scss";
+
 const HeroImg = () => {
   return (
     <figure className="heroimg">

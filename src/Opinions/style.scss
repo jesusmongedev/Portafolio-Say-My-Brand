@@ -1,41 +1,33 @@
-.Opinions {
+.opinions {
     padding: 16px 8px;
     background-color: rgb(238, 233, 226);
-    .Opinions_User {
+    &__title{
+        font-size: 1.4rem;
+    }
+    .user {
         display: flex;
         align-items: center;
         gap: 8px;
-        .Opinions_data {
-            .Opinions_User-Name {
-                margin: 0 0 5px 0;
-            }
+        .user__data-name {
+            margin: 0 0 5px 0;
         }
-        .Checked {
+        &__data-rated {
             color: orange;
             &:hover {
                 color: red;
             }
         }
     }
-    .Opinions__button {
+    &__button {
         display: flex;
         justify-content: center;
         gap: 7px;
-        button {
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-        }
     }
-}
-
-
-
-.create__opinions-button {
-    text-align: center;
-}
     .create__opinions-button {
+        text-align: center;
         margin-top: 10px;
         cursor: pointer;
     }
+}
+
+

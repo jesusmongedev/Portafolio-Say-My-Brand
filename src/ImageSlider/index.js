@@ -27,15 +27,15 @@ const ImageSlider = () => {
 
     return (
         <section className="slider">
-            <FontAwesomeIcon icon={faChevronLeft} className="left_arrow" onClick={prevSlide}/>
-            <FontAwesomeIcon icon={faChevronRight} className="right_arrow" onClick={nextSlide}/>
+            <FontAwesomeIcon icon={faChevronLeft} className="slider__left-arrow" onClick={prevSlide}/>
+            <FontAwesomeIcon icon={faChevronRight} className="slider__right-arrow" onClick={nextSlide}/>
             {SliderData.map((slide, index) => {
                 return (
                     <div 
                         className={index === current ? 'slide active' : 'slide'}
                         key={index}
                     >
-                        {index === current && (<img src={slide.image} alt={slide.alt} className="image"/>)}
+                        {index === current && (<img src={slide.image} alt={slide.alt} className="slide__image"/>)}
 
                     </div>
                 )

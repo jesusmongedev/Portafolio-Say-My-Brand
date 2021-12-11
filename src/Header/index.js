@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
-    // const LOGO = 'https://i.postimg.cc/Rhjc1fmm/Euro-Building.png';
     const LOGO = 'https://i.postimg.cc/rpjWz3Y5/Euro-Building-White.png';
     return (
         <nav className="header">
@@ -14,9 +13,9 @@ const Header = () => {
                     <span> <FontAwesomeIcon  icon={faBars} /> </span>
                 </summary>
                 <ul className="nav__links">
-                    <li><a target="_blank" href="https://bio.link/jmongedev">About us</a></li>
+                    <li><a target="_blank" href="#">About us</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a target="_blank" href="https://jmongedev.netlify.app/">Rooms</a></li>
+                    <li><a target="_blank" href="#">Rooms</a></li>
                 </ul>
             </details>
         </nav>

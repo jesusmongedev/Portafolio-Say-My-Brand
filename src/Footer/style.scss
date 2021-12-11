@@ -1,62 +1,67 @@
-$primary-color: #332DC1;
-$light-gray: #C4C4C4;
+$primary-color: #332dc1;
+$light-gray: #c4c4c4;
 
 footer {
-    font-size: 6px;
-    padding: 3rem 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    background-color: $primary-color;
+  font-size: 0.6rem;
+  padding: 3rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: $primary-color;
+  color: white;
+  a {
+    text-decoration: none;
     color: white;
-    a {
-        text-decoration: none;
-        color: white;
-        transition: .4s all ease;
-        &:hover {
-            color: $light-gray;
-            ;
-        }
+    transition: 0.4s all ease;
+    &:hover {
+      color: $light-gray;
     }
-    div {
-        width: 40%;
-    }
+  }
+  div {
+    width: 32%;
+  }
 }
-.footer__social {
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  &__title {
+    font-size: 1rem;
+    text-align: left;
+    margin: 0 0 0 11px;
+  }
+  a {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    span {
+        margin-left: 1rem;
+    }
+  }
+  &-icon {
+    width: 50px;
+    font-size: 2rem;
+  }
 }
-.footer__contact {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    a {
-            display: flex;
-            align-items: center;
-        }
-    .footer__contact-title {
-            font-size: 10px;
-            text-align: left;
-            margin: 0 0 0 11px;
-        }
-    .footer__contact-icon {
-            width: 50px;
-            font-size: 2rem;
-        }
-    }
-.footer__social-title {
-        font-size: 10px;
-        text-align: center;
-        margin: 0 0 12px 0;
-    }
-.footer__social-icon-container {
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__title {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0 12px 0;
+  }
+  &__icon-container {
     display: flex;
-    .footer__social-icon {
-            width: 50px;
-            font-size: 2rem;
-        }
+    .social-icon {
+      width: 50px;
+      font-size: 2rem;
     }
-svg.svg-inline--fa.fa-instagram.fa-w-14.footer__social-icon {
-        margin-left: -10px;
-    }
+  }
+}
+
+svg.svg-inline--fa.fa-instagram.fa-w-14.social-icon {
+  margin-left: -15px;
+}

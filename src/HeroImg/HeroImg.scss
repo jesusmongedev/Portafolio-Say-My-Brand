@@ -2,20 +2,20 @@
     overflow: hidden;
     position: relative;
     margin: 0;
-    width: 100vw;
-    height: 92vh;
-    .heroimg__picture {
-        display: block;
-        max-inline-size: 100%;
-        height: 100%;
+    width: 100%;
+    max-block-size: 92vh;
+    &__picture {
+        // display: block;
+        width: inherit;
+        // height: 92vh;
         object-fit: cover;
+        filter: brightness(70%);
     }
-    .heroimg__description {
+    &__description {
         position: absolute;
         text-align: center;
         bottom: 50px;
-        right: calc(50% - 176.53px);
-        background-color: rgba($color: #00000079, $alpha: 0.35);
+        right: calc(50% - 132.4px);
         color: white;
     }
 }

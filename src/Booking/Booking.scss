@@ -1,10 +1,11 @@
 .booking {
     height: fit-content;
     padding: 1rem .5rem ;
-    .booking__title {
+    &__title {
+        font-size: 1.4rem;
         font-weight: 700;
     }
-    .booking__inputs {
+    &__inputs {
         grid-gap: 10px;
         display: grid;
         justify-content: space-evenly;
@@ -24,14 +25,14 @@ $breakpoint-tablet: 768px;
     .booking {
         height: fit-content;
         padding: 5rem 14.5rem 2.5rem;
-    }
-    .booking__inputs {
-        display: flex;
-        justify-content: space-between;
-        input {
-            overflow: auto;
-            padding: 6px;
-            
+        &__inputs {
+            display: flex;
+            justify-content: space-between;
+            input {
+                overflow: auto;
+                padding: 6px;
+                
+            }
         }
     }
 }

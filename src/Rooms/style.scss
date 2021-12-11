@@ -1,6 +1,9 @@
 .rooms {
     padding: 16px 8px;
-    .rooms__container {
+    &__title {
+        font-size: 1.4rem;
+    }
+    &__container {
         width: 100%;
     }
     img {
@@ -8,17 +11,17 @@
         object-fit: cover;
         border-radius: 10px;
     }
-    .rooms__container-button {
+    &__container-button {
         text-align: center;
     }
-    .rooms__container-button button{
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        margin: 1%;
-        cursor: pointer;
-        &:hover {
-            opacity: 0.75;
-        }
+}
+.circle-button {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 1%;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.75;
     }
 }

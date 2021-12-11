@@ -11,11 +11,11 @@ $primary-color: #332DC1;
     background: $primary-color;
     color: white;
     z-index: 2;
-    .header__logo {
+    &__logo {
         width: 50px;
         height: auto;
     }
-    .header__name {
+    &__name {
         margin: 0;
         font-weight: 400;
         font-size: 24px;
@@ -27,7 +27,7 @@ $primary-color: #332DC1;
         summary {
             list-style: none;
         }
-        .nav__links{
+        &__links{
             position: absolute;
             width: 250px;
             padding: 16px 24px;

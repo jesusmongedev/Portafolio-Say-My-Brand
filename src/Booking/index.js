@@ -3,7 +3,7 @@ import './Booking.scss';
 const Booking = () => {
   return (
     <form className="booking">
-      <p className="booking__title">HAGA SU RESERVACIÓN</p>
+      <h2 className="booking__title">HAGA SU RESERVACIÓN</h2>
       <div className="booking__inputs"> 
         <input type="date" id="check-in"  className="button" />
         <input type="date" id="check-out" className="button" />

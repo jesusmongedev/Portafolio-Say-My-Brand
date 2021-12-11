@@ -29,13 +29,13 @@ const Rooms = () => {
     const [count, setCount] = useState(0);
     return(
         <section className="rooms">
-            <h2>Habitaciones</h2>
+            <h2 className="rooms__title">Habitaciones</h2>
             <div className="rooms__container">
                 <img src={items[count].image} alt={items[count].name} />
                 <div className="rooms__container-button">
-                    <button onClick={() => setCount(0)}></button>
-                    <button onClick={() => setCount(1)}></button>
-                    <button onClick={() => setCount(2)}></button>
+                    <button className="circle-button" onClick={() => setCount(0)}></button>
+                    <button className="circle-button" onClick={() => setCount(1)}></button>
+                    <button className="circle-button" onClick={() => setCount(2)}></button>
                 </div>
                 <h3>{items[count].name}</h3>
                 <p>{items[count].description}</p>

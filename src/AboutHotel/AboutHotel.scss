@@ -1,6 +1,7 @@
 .about-hotel {
     padding: 16px 8px;
-    .about-hotel__title {
+    &__title {
+        font-size: 1.4rem;
         margin: 0.5em 0;
     }
 }
