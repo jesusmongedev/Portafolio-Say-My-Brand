@@ -15,6 +15,7 @@ function App() {
   const [openOpinions, setOpenOpinions] = useState(false);
   const [openRegister, setOpenRegister] = useState(false);
 
+  openRegister? document.body.classList.add('active-modal') : document.body.classList.remove('active-modal')
 
   return (
     <>

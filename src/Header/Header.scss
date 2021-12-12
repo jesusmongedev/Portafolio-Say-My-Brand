@@ -22,16 +22,16 @@ $primary-color: #332DC1;
         letter-spacing: 2px;
     }
     .nav {
-        position: relative;
         cursor: pointer;
         summary {
             list-style: none;
         }
         &__links{
             position: absolute;
-            width: 250px;
+            right: 0;
+            // width: 100px;
             padding: 16px 24px;
-            left: -90px;
+            
             background: $primary-color;
             li {
                 list-style: none;

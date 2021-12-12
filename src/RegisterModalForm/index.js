@@ -2,11 +2,35 @@ import React from "react";
 import './RegisterModalForm.scss'
 
 const RegisterModalForm = (props) => {
+  const [name,setName] = React.useState("");
+  const [email,setEmail] = React.useState("");
+  const [pass,setPass] = React.useState("");
+
+  const sendForm = (ev) => {
+    props.setOpenRegister(false);
+
+    ev.preventDefault();
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            email: email,
+            name: name,
+            password: pass,
+            userId: 1
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(response=>response.json())
+    .then(json=> console.log(json))
+}
+
   return (
     <>
-      <div className="overlay">
+      <div className="overlay" onClick={()=>props.setOpenRegister(false)}>
       </div>
-      <form className="modalForm">
+      <form onSubmit={ (ev)=> sendForm(ev) } className="modalForm">
         <div className="modalForm__info">
             <span
               className="modalForm--closeModal"
@@ -23,28 +47,33 @@ const RegisterModalForm = (props) => {
           Digite su nombre:
         </label> */}
         <div className="modalForm__add">
-          <textarea
-            id="newTodo"
+          <input
+            id="title"
             placeholder="Nombre ..."
             className="modalForm__add-input"
+            onChange={(ev) => setName(ev.target.value)}
+            type="text"
+            name="name"
             autoFocus
           />
-          <textarea
-            id="newTodo"
+          <input
+            id="body"
             placeholder="Email ..."
             className="modalForm__add-input"
-            autoFocus
+            onChange={(ev) => setEmail(ev.target.value)}
+            type="text"
+            name="mail"
           />
-          <textarea
+          <input
             id="newTodo"
             placeholder="Password ..."
             className="modalForm__add-input"
-            autoFocus
+            onChange={(ev) => setPass(ev.target.value)}
+            type="password"
           />
           <button
-            className="modal-button"
+            className="button button--active"
             type="submit"
-            disabled
           >
             Continua
           </button>

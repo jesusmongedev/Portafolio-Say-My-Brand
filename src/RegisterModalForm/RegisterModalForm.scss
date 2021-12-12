@@ -1,6 +1,6 @@
-// body.active-modal {
-//     overflow-y: hidden;
-// }
+body.active-modal {
+    overflow-y: hidden;
+}
 
 .modalForm {
     min-inline-size: 95%;
@@ -48,23 +48,9 @@
             }
         }
     }
-    .modal-button {
+    .button{
         border: 0.3rem solid #EDEDED;
-        border-radius: 8px;
-        background: orange;
         color: white;
-        padding: 1rem 1.5rem;
-        font-size: 1.6rem;
-        font-weight: bold;
-        cursor: pointer;
-        opacity: 0.8;
-        transition: .3s all ease;
-        &:hover {
-            opacity: 1;
-        }
-    }
-    .modal-button--cancel {
-        background-color: #fc352e;
     }
 }
 
