@@ -8,13 +8,26 @@ import { ImageSlider } from "./ImageSlider";
 import { NewOpinion } from "./NewOpinion";
 import { useState } from "react";
 import { AboutHotel } from "./AboutHotel";
+import { RegisterModal } from "./RegisterModal";
+import { RegisterModalForm } from "./RegisterModalForm";
 
 function App() {
   const [openOpinions, setOpenOpinions] = useState(false);
+  const [openRegister, setOpenRegister] = useState(false);
+
 
   return (
     <>
-      <Header/>
+      <Header
+        setOpenRegister={setOpenRegister}
+      />
+      {openRegister && (
+        <RegisterModal
+          setOpenRegister={setOpenRegister}
+        >
+          <RegisterModalForm setOpenRegister={setOpenRegister}/>
+        </RegisterModal>
+      )}
       <HeroImg/>
       <Booking/>
       <AboutHotel/>

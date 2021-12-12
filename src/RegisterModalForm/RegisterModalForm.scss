@@ -1,0 +1,84 @@
+// body.active-modal {
+//     overflow-y: hidden;
+// }
+
+.modalForm {
+    min-inline-size: 95%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+    background-color: rgba(32,35,41,.9);
+    border: 0.3rem solid #EDEDED;
+    border-radius: 8px;
+    z-index: 2;
+    &__info{
+        display: flex;
+        align-items: center;
+        span{
+            flex-grow: 1;
+        }
+        p{
+            flex-grow: 1;
+        }
+    }
+    &--closeModal{
+        cursor: pointer;
+        flex: 1;
+    }
+    h3{
+        margin: 0;
+    }
+    .modalForm__add {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .modalForm__add-input {
+            border: 0.3rem solid #ededed73;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            background: transparent;
+            font-family: inherit;
+            font-size: 1.6rem;
+            color: white;
+            &:focus {
+                outline: none;
+                border: 0.3rem solid #EDEDED;
+            }
+        }
+    }
+    .modal-button {
+        border: 0.3rem solid #EDEDED;
+        border-radius: 8px;
+        background: orange;
+        color: white;
+        padding: 1rem 1.5rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: .3s all ease;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .modal-button--cancel {
+        background-color: #fc352e;
+    }
+}
+
+@media screen and (min-width:570px) {
+    .modalForm {
+        min-inline-size: 75%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modalForm {
+        min-inline-size: 60%;
+        padding: 3rem 6rem;
+        font-size: 2rem;
+    }
+}
+
