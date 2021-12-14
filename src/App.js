@@ -18,7 +18,7 @@ function App() {
   const [openOpinions, setOpenOpinions] = useState(false);
   const [openRegister, setOpenRegister] = useState(false);
 
-  const[authors, setAuthors] = useState([]);
+  // const[authors, setAuthors] = useState([]);
   const { getAuthors } = useContentful();
 
   useEffect(() => {
