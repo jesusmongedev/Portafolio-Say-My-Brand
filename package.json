@@ -11,6 +11,8 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "contentful": "^9.1.5",
+    "contentful-management": "^7.45.7",
     "node-sass": "^6.0.1",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
