@@ -8,38 +8,35 @@ const useContentful= ()=> {
                 host: 'preview.contentful.com'
             });
 
-    const getAuthors = async () => {
+    const getEuroBuyers = async () => {
         try {
             const entries = await client.getEntries({
-                // content_type: 'fields',
-                // select: 'fields'
+                content_type: 'euroBuyer',
+                select: 'fields'
             });
-            return entries
+
+            const sanitizedEntries = entries.items.map((item) => {
+        
+                return {
+                    ...item.fields
+                }
+            })
+
+            return sanitizedEntries
         } catch (error) {
             console.log(`Error fetching Authors ${error}`)
         }
     };
 
-    return { getAuthors };
 
+    return { getEuroBuyers };
+    
 }
+
 
 export {useContentful};
 
-// async function Connect() {
-//     let client = await contentful.createClient({
-//         accessToken: 'YCSWvdVRn2VDAMrBG1yuzebJ0dKNsh6iHjmSXGnZ7hM',
-//     });
-//     let space = await client.getSpace('dvq03x50kg91');
-//     return await space.getEnvironment('master');
-// }
 
-// (async () => {
-//     let env = await Connect();
-//     console.log(env);
-//     // await UpdateBuyer(env, 'Fd9j25LNJ0JIcnIwKgCF0')
-//     // await UpdateBuyer(env, 'entries')
-// })();
 
 const contentful = require('contentful-management');
 
@@ -61,7 +58,6 @@ async function UpdateBuyer(env, buyerID){
 
 (async () => {
     let env = await Connect();
-    // console.log(env);
     await UpdateBuyer(env, '4dO8NTb3C4szqrzA49ZLXz')
 })();
 
