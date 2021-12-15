@@ -23,7 +23,7 @@ const ImageSlider = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     };
     // Aquí se puede ver en consola los index al presionar los botones
-    console.log(current);    
+    // console.log(current);    
 
     return (
         <section className="slider">
