@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Header } from "./Header";
 import { HeroImg } from "./HeroImg";
 import { Booking } from "./Booking";
@@ -6,23 +7,21 @@ import { Opinions } from "./Opinions";
 import { Footer } from "./Footer";
 import { ImageSlider } from "./ImageSlider";
 import { NewOpinion } from "./NewOpinion";
-
-import { useEffect, useState } from "react";
-
 import { AboutHotel } from "./AboutHotel";
 import { RegisterModal } from "./RegisterModal";
 import { RegisterModalForm } from "./RegisterModalForm";
 import { useContentful } from "./ContentfulApi/main";
 
+
 function App() {
   const [openOpinions, setOpenOpinions] = useState(false);
   const [openRegister, setOpenRegister] = useState(false);
 
-  // const[authors, setAuthors] = useState([]);
-  const { getAuthors } = useContentful();
+  const[euroBuyers, setEuroBuyers] = useState([]);
+  const { getEuroBuyers } = useContentful();
 
   useEffect(() => {
-    getAuthors().then((response) => console.log(response));
+    getEuroBuyers().then((response) => setEuroBuyers(response));
   });
 
   openRegister? document.body.classList.add('active-modal') : document.body.classList.remove('active-modal')
@@ -40,6 +39,16 @@ function App() {
         </RegisterModal>
       )}
       <HeroImg/>
+      
+      {
+        euroBuyers.map((buyers, index) =>  
+        <p key={index}  > 
+          {buyers.euroName} <br />
+          {buyers.euroMail} <br />
+        </p> )
+      }
+
+
       <Booking/>
       <AboutHotel/>
       <ImageSlider />
